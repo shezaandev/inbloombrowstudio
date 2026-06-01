@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500&family=Inter:wght@300;400;500;600;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-serif: "Cormorant Garamond", Georgia, serif;
+  
+  --color-cream: #fbf9f6;
+  --color-cream-dark: #f0ebe2;
+  --color-cream-light: #fefdfb;
+  --color-charcoal: #222222;
+  --color-charcoal-light: #484848;
+  --color-charcoal-dark: #000000;
+  
+  --color-rose: #cf8484;
+  --color-rose-border: #d49898;
+  
+  --color-blush: #cf8484;
+  --color-blush-dark: #a86262;
+  --color-blush-light: #f7e6e6;
+  
+  --color-sage: #667665;
+  --color-sage-dark: #495448;
+  --color-sage-light: #899888;
+  --color-sage-pale: #f2f5f1;
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: var(--color-cream);
+  color: var(--color-charcoal);
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Base interactive transitions */
+a, button {
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.font-serif-italic {
+  font-family: var(--font-serif);
+  font-style: italic;
+}
+
+/* Artistic design theme helpers */
+.serif {
+  font-family: var(--font-serif);
+}
+
+.sans {
+  font-family: var(--font-sans);
+}
+
+.hero-mask {
+  border-radius: 400px 400px 0 0;
+}
+
+
