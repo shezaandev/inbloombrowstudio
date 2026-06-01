@@ -5,20 +5,30 @@
 
 import { Service, Testimonial, FAQ, CareStep, Policy } from './types';
 
-// Image paths
-export const IMAGES = {
-  hero: '/src/assets/images/brow-hero.jpg',
-  studio: '/src/assets/images/brow-studio.jpg',
-  leticia: '/src/assets/images/leticia-profile.jpg',
-  lamination: '/src/assets/images/brow-lamination.jpg',
-  dyeSculpt: '/src/assets/images/brow-dye-sculpt.jpg',
-  cozyStudio: '/src/assets/images/cozy-studio.jpg',
-  eyeMask: '/src/assets/images/brow-eye-mask.jpg',
-  beforeLamination: '/src/assets/images/before-lamination.jpg',
-  beforeSculpt: '/src/assets/images/before-sculpt.jpg',
-  secondary: '/src/assets/images/brow-secondary.jpg',
-};
+// Image imports — Vite resolves these correctly at build time
+import hero from './assets/images/brow-hero.jpg';
+import studio from './assets/images/brow-studio.jpg';
+import leticia from './assets/images/leticia-profile.jpg';
+import lamination from './assets/images/brow-lamination.jpg';
+import dyeSculpt from './assets/images/brow-dye-sculpt.jpg';
+import cozyStudio from './assets/images/cozy-studio.jpg';
+import eyeMask from './assets/images/brow-eye-mask.jpg';
+import beforeLamination from './assets/images/before-lamination.jpg';
+import beforeSculpt from './assets/images/before-sculpt.jpg';
+import secondary from './assets/images/brow-secondary.jpg';
 
+export const IMAGES = {
+  hero,
+  studio,
+  leticia,
+  lamination,
+  dyeSculpt,
+  cozyStudio,
+  eyeMask,
+  beforeLamination,
+  beforeSculpt,
+  secondary,
+};
 // Services Data
 export const SERVICES: Service[] = [
   {
